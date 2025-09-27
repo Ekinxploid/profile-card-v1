@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheyza - Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Tema uyumlu renkler */
+        .profile-image-border {
+            border: 4px solid var(--accent-color, #9f7aea) !important;
+            border-radius: 50%;
+        }
+        
+        .profile-name {
+            color: var(--accent-color, #9f7aea) !important;
+        }
+        
+        /* Eğer CSS değişkenleri yoksa yedek renkler */
+        :root {
+            --accent-color: #9f7aea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Spotify Status -->
+    <div class="spotify-status">
+        <div class="status-indicator"></div>
+        <span class="status-text">Listening to: Song Name</span>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun"></i>
+        <span>Light</span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <!-- Banner -->
+            <div class="banner">
+                <img src="https://i.postimg.cc/Vky2FmLk/9rFit4M.jpg" alt="Banner" class="banner-image">
+                <div class="banner-overlay"></div>
+            </div>
+            
+            <!-- Profile Image -->
+            <div class="profile-image-container">
+                <img src="https://i.postimg.cc/MpMKnWPF/2c700339fca53d5a9996a08bc0c0abfc.jpg" alt="Cheyza" class="profile-image">
+                <div class="profile-image-border"></div>
+            </div>
+            
+            <!-- Profile Info -->
+            <div class="profile-info">
+                <h1 class="profile-name">Cheyza</h1>
+                <p class="profile-bio">Frontend Developer • Music Lover • Open Source Contributor</p>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/ekincantezcxn/" target="_blank" class="social-button instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://discordapp.com/users/1071158799706103859" target="_blank" class="social-button discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="https://github.com/Ekinxploid" target="_blank" class="social-button github">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+                <a href="https://open.spotify.com/artist/0kfXMq3tM7w6sPvYxN0rcN?si=BbZxWEiaQvqMWZaqdPQHxw" target="_blank" class="social-button spotify">
+                    <i class="fab fa-spotify"></i>
+                    <span>Spotify</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ by Cheyza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
